@@ -6,7 +6,6 @@
  * -----------------------------------
  */
 package com.blacksystem.mapbus.adapter.web.controller;
-
 import com.blacksystem.mapbus.adapter.web.dto.CreateOperadoraTransporteDto;
 import com.blacksystem.mapbus.adapter.web.dto.OperadoraTransporteResponseDto;
 import com.blacksystem.mapbus.aplication.service.CiudadService;

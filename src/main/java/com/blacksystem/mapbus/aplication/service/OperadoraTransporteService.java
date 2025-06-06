@@ -34,11 +34,12 @@ public class OperadoraTransporteService {
         return operadoraRepository.save(operadora);
     }
 
+
     @Transactional
     public void eliminarOperadora(Long idOperadora) {
-        if (operadoraRepository.existsByIdAndRutasActivas(idOperadora)) {
-            throw new IllegalStateException("No se puede eliminar: la operadora tiene rutas activas");
-        }
+//        if (operadoraRepository.existsByIdAndRutasActivas(idOperadora)) {
+//            throw new IllegalStateException("No se puede eliminar: la operadora tiene rutas activas");
+//        }
         OperadoraTransporte operadora = operadoraRepository.findById(idOperadora)
                 .orElseThrow(() -> new IllegalArgumentException("Operadora no encontrada"));
         operadoraRepository.delete(operadora);

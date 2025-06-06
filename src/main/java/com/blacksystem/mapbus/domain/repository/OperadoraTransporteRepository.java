@@ -13,5 +13,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface OperadoraTransporteRepository extends JpaRepository<OperadoraTransporte, Long> {
     boolean existsByRfc(String rfc);
 
-    boolean existsByIdAndRutasActivas(Long idOperadora);
+    //boolean existsByIdAndRutasActivas(Long idOperadoraTransporte);
 }
